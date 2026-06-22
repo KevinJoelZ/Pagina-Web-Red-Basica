@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conexiones Físicas | Red Básica</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container nav-inner">
+      <a href="../../index.html" class="logo"><div class="logo-icon">⬡</div>Red Básica</a>
+      <button class="nav-toggle" aria-label="Menú"><span></span><span></span><span></span></button>
+      <ul class="nav-links">
+        <li><a href="../../index.html">Inicio</a></li>
+        <li><span class="nav-parent">Temas ▾</span>
+          <ul class="dropdown">
+            <li class="sub-label">Módulos</li>
+            <li><a href="../fundamentos/index.html">Fundamentos de Red</a></li>
+            <li><a href="../packet-tracer/index.html">Cisco Packet Tracer</a></li>
+            <li><a href="../topologia/index.html">Diseño de Topología</a></li>
+            <li><a href="../configuracion/index.html">Configuración IP</a></li>
+            <li><a href="../verificacion/index.html">Verificación</a></li>
+          </ul>
+        </li>
+        <li><a href="../../video.html">Video</a></li>
+        <li><a href="../../galeria.html">Galería</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="page-hero">
+    <div class="container">
+      <nav class="breadcrumb"><a href="../../index.html">Inicio</a> › <a href="index.html">Topología</a> › <span>Conexiones físicas</span></nav>
+      <h1>Conexiones Físicas</h1>
+      <p>Cableado correcto entre dispositivos en Cisco Packet Tracer.</p>
+    </div>
+  </header>
+
+  <div class="container content-layout">
+    <aside class="sidebar">
+      <h4>En este módulo</h4>
+      <ul>
+        <li><a href="index.html">Introducción</a></li>
+        <li><a href="diseno-lan.html">Diseño de LAN</a></li>
+        <li><a href="conexiones.html" class="active">Conexiones físicas</a></li>
+      </ul>
+    </aside>
+    <article class="article">
+      <h2>Reglas de cableado</h2>
+      <ul>
+        <li><strong>PC → Switch:</strong> Copper Straight-Through (FastEthernet0 del PC a cualquier puerto del switch).</li>
+        <li><strong>Switch → Router:</strong> Copper Straight-Through (puerto del switch a FastEthernet0/0 del router).</li>
+      </ul>
+
+      <h3>Indicadores de enlace</h3>
+      <p>Cuando la conexión es correcta, los puntos en los extremos del cable se vuelven <strong>verdes</strong>. Si aparecen rojos o naranjas, revisa el tipo de cable o el puerto seleccionado.</p>
+
+      <h3>Pasos en Packet Tracer</h3>
+      <ol>
+        <li>Selecciona el ícono de conexiones (rayo) en la esquina inferior izquierda.</li>
+        <li>Elige <em>Copper Straight-Through</em>.</li>
+        <li>Haz clic en el primer dispositivo y selecciona el puerto.</li>
+        <li>Haz clic en el segundo dispositivo y selecciona su puerto.</li>
+        <li>Verifica que el enlace muestre luz verde.</li>
+      </ol>
+
+      <div class="info-box">
+        <strong>Captura 2 de la galería</strong> muestra las conexiones físicas del laboratorio. <a href="../../galeria.html">Ver galería →</a>
+      </div>
+    </article>
+  </div>
+
+    <footer class="footer">
+    <div class="container footer-unified">
+      <p>© 2026 Red Básica — Cisco Packet Tracer</p>
+      <p>ITECSUR · Manejo de Redes Avanzadas</p>
+    </div>
+  </footer>
+  <script src="../../assets/js/main.js"></script>
+</body>
+</html>

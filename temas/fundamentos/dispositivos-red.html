@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dispositivos de Red | Red Básica</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container nav-inner">
+      <a href="../../index.html" class="logo"><div class="logo-icon">⬡</div>Red Básica</a>
+      <button class="nav-toggle" aria-label="Menú"><span></span><span></span><span></span></button>
+      <ul class="nav-links">
+        <li><a href="../../index.html">Inicio</a></li>
+        <li><span class="nav-parent">Temas ▾</span>
+          <ul class="dropdown">
+            <li class="sub-label">Módulos</li>
+            <li><a href="../fundamentos/index.html">Fundamentos de Red</a></li>
+            <li><a href="../packet-tracer/index.html">Cisco Packet Tracer</a></li>
+            <li><a href="../topologia/index.html">Diseño de Topología</a></li>
+            <li><a href="../configuracion/index.html">Configuración IP</a></li>
+            <li><a href="../verificacion/index.html">Verificación</a></li>
+          </ul>
+        </li>
+        <li><a href="../../video.html">Video</a></li>
+        <li><a href="../../galeria.html">Galería</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="page-hero">
+    <div class="container">
+      <nav class="breadcrumb"><a href="../../index.html">Inicio</a> › <a href="index.html">Fundamentos</a> › <span>Dispositivos de red</span></nav>
+      <h1>Dispositivos de Red</h1>
+      <p>Roles y funciones de cada equipo en la topología básica del laboratorio.</p>
+    </div>
+  </header>
+
+  <div class="container content-layout">
+    <aside class="sidebar">
+      <h4>En este módulo</h4>
+      <ul>
+        <li><a href="index.html">Introducción</a></li>
+        <li><a href="conceptos-red.html">Conceptos de red</a></li>
+        <li><a href="dispositivos-red.html" class="active">Dispositivos de red</a></li>
+        <li><a href="modelo-osi.html">Modelo OSI</a></li>
+      </ul>
+    </aside>
+    <article class="article">
+      <h2>Hosts (PCs)</h2>
+      <p>Son los equipos finales que generan y reciben tráfico. En Packet Tracer, cada PC tiene una interfaz de red (NIC) con dirección MAC y configuración IP. Son el punto de origen y destino de la comunicación.</p>
+
+      <h2>Switch (Capa 2)</h2>
+      <p>Interconecta múltiples dispositivos dentro de la misma red local. Opera en la <strong>capa de enlace</strong> del modelo OSI, usando direcciones MAC para reenviar tramas solo al puerto destino correcto. No enruta entre redes distintas.</p>
+
+      <h2>Router (Capa 3)</h2>
+      <p>Conecta redes diferentes y toma decisiones de enrutamiento basadas en direcciones IP. En una red básica, el router actúa como <strong>gateway predeterminado</strong>: la puerta de salida hacia otras redes o hacia Internet simulada.</p>
+
+      <h3>Tabla comparativa</h3>
+      <ul>
+        <li><strong>Switch:</strong> Capa 2 · Direcciona por MAC · Misma subred</li>
+        <li><strong>Router:</strong> Capa 3 · Direcciona por IP · Entre subredes</li>
+        <li><strong>PC:</strong> Capa 7 · Aplicaciones de usuario · Host final</li>
+      </ul>
+
+      <div class="info-box">
+        <strong>En nuestro proyecto:</strong> Las PCs se conectan al switch; el switch se conecta al router. Esta es la arquitectura clásica de una LAN empresarial básica.
+      </div>
+    </article>
+  </div>
+
+    <footer class="footer">
+    <div class="container footer-unified">
+      <p>© 2026 Red Básica — Cisco Packet Tracer</p>
+      <p>ITECSUR · Manejo de Redes Avanzadas</p>
+    </div>
+  </footer>
+  <script src="../../assets/js/main.js"></script>
+</body>
+</html>

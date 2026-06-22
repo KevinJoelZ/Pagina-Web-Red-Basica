@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diseño de Topología | Red Básica</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container nav-inner">
+      <a href="../../index.html" class="logo"><div class="logo-icon">⬡</div>Red Básica</a>
+      <button class="nav-toggle" aria-label="Menú"><span></span><span></span><span></span></button>
+      <ul class="nav-links">
+        <li><a href="../../index.html">Inicio</a></li>
+        <li><span class="nav-parent">Temas ▾</span>
+          <ul class="dropdown">
+            <li class="sub-label">Módulos</li>
+            <li><a href="../fundamentos/index.html">Fundamentos de Red</a></li>
+            <li><a href="../packet-tracer/index.html">Cisco Packet Tracer</a></li>
+            <li><a href="../topologia/index.html">Diseño de Topología</a></li>
+            <li><a href="../configuracion/index.html">Configuración IP</a></li>
+            <li><a href="../verificacion/index.html">Verificación</a></li>
+          </ul>
+        </li>
+        <li><a href="../../video.html">Video</a></li>
+        <li><a href="../../galeria.html">Galería</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="page-hero">
+    <div class="container">
+      <nav class="breadcrumb"><a href="../../index.html">Inicio</a> › <span>Diseño de Topología</span></nav>
+      <span class="section-tag">Módulo 3</span>
+      <h1>Diseño de Topología</h1>
+      <p>Armado de la red básica: selección de dispositivos, conexiones físicas y esquema del laboratorio.</p>
+    </div>
+  </header>
+
+  <div class="container content-layout">
+    <aside class="sidebar">
+      <h4>En este módulo</h4>
+      <ul>
+        <li><a href="index.html" class="active">Introducción</a></li>
+        <li><a href="diseno-lan.html">Diseño de LAN</a></li>
+        <li><a href="conexiones.html">Conexiones físicas</a></li>
+      </ul>
+    </aside>
+    <article class="article">
+      <h2>Topología del proyecto</h2>
+      <p>La red básica del laboratorio sigue una <strong>topología en estrella extendida</strong>: varias PCs conectadas a un switch central, y el switch conectado a un router que actúa como gateway hacia otras redes.</p>
+
+      <h3>Dispositivos utilizados</h3>
+      <ul>
+        <li>2 o más PCs (End Devices → PC-PT)</li>
+        <li>1 Switch (2960 o similar)</li>
+        <li>1 Router (2811 o 1941)</li>
+        <li>Cables Copper Straight-Through</li>
+      </ul>
+
+      <div class="info-box">
+        <strong>Evidencia visual:</strong> Consulta la <a href="../../galeria.html">galería de capturas</a> para ver la topología real implementada en el proyecto.
+      </div>
+
+      <div class="cards-grid" style="margin-top: 24px;">
+        <a href="diseno-lan.html" class="card" style="text-decoration:none;color:inherit;">
+          <div class="card-icon">📐</div>
+          <h3>Diseño de LAN</h3>
+          <p>Planificación del esquema de red y asignación de subredes.</p>
+        </a>
+        <a href="conexiones.html" class="card" style="text-decoration:none;color:inherit;">
+          <div class="card-icon">🔌</div>
+          <h3>Conexiones físicas</h3>
+          <p>Cableado correcto entre PCs, switch y router.</p>
+        </a>
+      </div>
+    </article>
+  </div>
+
+    <footer class="footer">
+    <div class="container footer-unified">
+      <p>© 2026 Red Básica — Cisco Packet Tracer</p>
+      <p>ITECSUR · Manejo de Redes Avanzadas</p>
+    </div>
+  </footer>
+  <script src="../../assets/js/main.js"></script>
+</body>
+</html>

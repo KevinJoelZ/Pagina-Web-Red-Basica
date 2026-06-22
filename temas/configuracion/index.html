@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Configuración IP | Red Básica</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container nav-inner">
+      <a href="../../index.html" class="logo"><div class="logo-icon">⬡</div>Red Básica</a>
+      <button class="nav-toggle" aria-label="Menú"><span></span><span></span><span></span></button>
+      <ul class="nav-links">
+        <li><a href="../../index.html">Inicio</a></li>
+        <li><span class="nav-parent">Temas ▾</span>
+          <ul class="dropdown">
+            <li class="sub-label">Módulos</li>
+            <li><a href="../fundamentos/index.html">Fundamentos de Red</a></li>
+            <li><a href="../packet-tracer/index.html">Cisco Packet Tracer</a></li>
+            <li><a href="../topologia/index.html">Diseño de Topología</a></li>
+            <li><a href="../configuracion/index.html">Configuración IP</a></li>
+            <li><a href="../verificacion/index.html">Verificación</a></li>
+          </ul>
+        </li>
+        <li><a href="../../video.html">Video</a></li>
+        <li><a href="../../galeria.html">Galería</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="page-hero">
+    <div class="container">
+      <nav class="breadcrumb"><a href="../../index.html">Inicio</a> › <span>Configuración IP</span></nav>
+      <span class="section-tag">Módulo 4</span>
+      <h1>Configuración IP</h1>
+      <p>Asignación de direcciones IPv4, máscaras de subred y gateway en hosts y router del laboratorio.</p>
+    </div>
+  </header>
+
+  <div class="container content-layout">
+    <aside class="sidebar">
+      <h4>En este módulo</h4>
+      <ul>
+        <li><a href="index.html" class="active">Introducción</a></li>
+        <li><a href="asignacion-ip.html">Asignación de IP</a></li>
+        <li><a href="gateway-dns.html">Gateway y DNS</a></li>
+      </ul>
+    </aside>
+    <article class="article">
+      <h2>Configuración de red en Packet Tracer</h2>
+      <p>Una vez armada la topología y conectados los cables, cada dispositivo necesita parámetros de red para comunicarse. Sin IP correcta, ni siquiera el ping funcionará.</p>
+
+      <h3>Parámetros esenciales</h3>
+      <ul>
+        <li><strong>IP Address:</strong> Identificador único del host en la subred.</li>
+        <li><strong>Subnet Mask:</strong> Define el tamaño de la red (ej: 255.255.255.0).</li>
+        <li><strong>Default Gateway:</strong> IP del router para salir de la subred local.</li>
+        <li><strong>DNS Server:</strong> Resuelve nombres a direcciones IP (opcional en red básica).</li>
+      </ul>
+
+      <div class="cards-grid" style="margin-top: 24px;">
+        <a href="asignacion-ip.html" class="card" style="text-decoration:none;color:inherit;">
+          <div class="card-icon">🔢</div>
+          <h3>Asignación de IP</h3>
+          <p>Configurar IP estática en cada PC del laboratorio.</p>
+        </a>
+        <a href="gateway-dns.html" class="card" style="text-decoration:none;color:inherit;">
+          <div class="card-icon">🚪</div>
+          <h3>Gateway y DNS</h3>
+          <p>Puerta de enlace y servidor DNS en la red básica.</p>
+        </a>
+      </div>
+    </article>
+  </div>
+
+    <footer class="footer">
+    <div class="container footer-unified">
+      <p>© 2026 Red Básica — Cisco Packet Tracer</p>
+      <p>ITECSUR · Manejo de Redes Avanzadas</p>
+    </div>
+  </footer>
+  <script src="../../assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Video demostrativo de la red básica implementada en Cisco Packet Tracer.">
+  <title>Video Demostrativo | Red Básica</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">⬡</div>
+        Red Básica
+      </a>
+      <button class="nav-toggle" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li>
+          <span class="nav-parent">Temas ▾</span>
+          <ul class="dropdown">
+            <li class="sub-label">Módulos</li>
+            <li><a href="temas/fundamentos/index.html">Fundamentos de Red</a></li>
+            <li><a href="temas/packet-tracer/index.html">Cisco Packet Tracer</a></li>
+            <li><a href="temas/topologia/index.html">Diseño de Topología</a></li>
+            <li><a href="temas/configuracion/index.html">Configuración IP</a></li>
+            <li><a href="temas/verificacion/index.html">Verificación</a></li>
+          </ul>
+        </li>
+        <li><a href="video.html" class="active">Video</a></li>
+        <li><a href="galeria.html">Galería</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="page-hero">
+    <div class="container">
+      <nav class="breadcrumb">
+        <a href="index.html">Inicio</a> › <span>Video</span>
+      </nav>
+      <span class="section-tag">Demostración</span>
+      <h1>Video: Red Básica en Packet Tracer</h1>
+      <p>Recorrido completo del laboratorio — desde el armado de la topología hasta la verificación de conectividad entre todos los dispositivos de la red.</p>
+    </div>
+  </header>
+
+  <section class="section" style="padding-top: 40px;">
+    <div class="container">
+      <div class="video-wrapper">
+        <video controls preload="metadata" poster="Capturas/1.jpeg">
+          <source src="Video/1er%20Red%20B%C3%A1sica.mp4" type="video/mp4">
+          Tu navegador no soporta la reproducción de video.
+        </video>
+        <div class="video-info">
+          <h3>1er Red Básica — Demostración completa</h3>
+          <p>Este video documenta el proceso integral del proyecto: creación de la topología LAN, configuración de direcciones IP en hosts y router, y pruebas de comunicación con herramientas de diagnóstico en modo simulación.</p>
+        </div>
+      </div>
+
+      <div class="video-features">
+        <div class="video-feature">
+          <div class="video-feature-icon">🏗️</div>
+          <div>
+            <h4>Armado de topología</h4>
+            <p>Colocación de PCs, switch y router con sus conexiones.</p>
+          </div>
+        </div>
+        <div class="video-feature">
+          <div class="video-feature-icon">🔢</div>
+          <div>
+            <h4>Configuración IP</h4>
+            <p>Asignación de direcciones y gateway en cada equipo.</p>
+          </div>
+        </div>
+        <div class="video-feature">
+          <div class="video-feature-icon">📡</div>
+          <div>
+            <h4>Pruebas de red</h4>
+            <p>Ping entre hosts para validar conectividad end-to-end.</p>
+          </div>
+        </div>
+        <div class="video-feature">
+          <div class="video-feature-icon">⏱️</div>
+          <div>
+            <h4>Modo simulación</h4>
+            <p>Visualización de paquetes en tiempo real en Packet Tracer.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="cta-banner" style="margin-top: 60px;">
+        <h2>¿Quieres ver las capturas?</h2>
+        <p>Explora las 6 imágenes del laboratorio con detalle de cada paso del proyecto.</p>
+        <a href="galeria.html" class="btn btn-primary">Ver galería de capturas →</a>
+      </div>
+    </div>
+  </section>
+
+    <footer class="footer">
+    <div class="container footer-unified">
+      <p>© 2026 Red Básica — Cisco Packet Tracer</p>
+      <p>ITECSUR · Manejo de Redes Avanzadas</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

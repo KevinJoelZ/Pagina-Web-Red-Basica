@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comandos de Diagnóstico | Red Básica</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container nav-inner">
+      <a href="../../index.html" class="logo"><div class="logo-icon">⬡</div>Red Básica</a>
+      <button class="nav-toggle" aria-label="Menú"><span></span><span></span><span></span></button>
+      <ul class="nav-links">
+        <li><a href="../../index.html">Inicio</a></li>
+        <li><span class="nav-parent">Temas ▾</span>
+          <ul class="dropdown">
+            <li class="sub-label">Módulos</li>
+            <li><a href="../fundamentos/index.html">Fundamentos de Red</a></li>
+            <li><a href="../packet-tracer/index.html">Cisco Packet Tracer</a></li>
+            <li><a href="../topologia/index.html">Diseño de Topología</a></li>
+            <li><a href="../configuracion/index.html">Configuración IP</a></li>
+            <li><a href="../verificacion/index.html">Verificación</a></li>
+          </ul>
+        </li>
+        <li><a href="../../video.html">Video</a></li>
+        <li><a href="../../galeria.html">Galería</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="page-hero">
+    <div class="container">
+      <nav class="breadcrumb"><a href="../../index.html">Inicio</a> › <a href="index.html">Verificación</a> › <span>Comandos de diagnóstico</span></nav>
+      <h1>Comandos de Diagnóstico</h1>
+      <p>Herramientas adicionales para inspeccionar y depurar la red básica.</p>
+    </div>
+  </header>
+
+  <div class="container content-layout">
+    <aside class="sidebar">
+      <h4>En este módulo</h4>
+      <ul>
+        <li><a href="index.html">Introducción</a></li>
+        <li><a href="ping.html">Pruebas con ping</a></li>
+        <li><a href="comandos-diagnostico.html" class="active">Comandos de diagnóstico</a></li>
+      </ul>
+    </aside>
+    <article class="article">
+      <h2>En PCs (Command Prompt)</h2>
+      <ul>
+        <li><code>ipconfig</code> — Muestra la configuración IP del PC.</li>
+        <li><code>arp -a</code> — Tabla ARP: asocia IPs con direcciones MAC.</li>
+        <li><code>tracert 192.168.1.1</code> — Ruta que siguen los paquetes hasta el destino.</li>
+      </ul>
+
+      <h2>En Router (CLI)</h2>
+      <p>Accede vía CLI en el router y usa:</p>
+      <ul>
+        <li><code>show ip interface brief</code> — Estado de todas las interfaces IP.</li>
+        <li><code>show running-config</code> — Configuración activa del equipo.</li>
+        <li><code>show ip route</code> — Tabla de enrutamiento del router.</li>
+      </ul>
+
+      <h2>Modo simulación</h2>
+      <p>Activa el modo <strong>Simulation</strong> (ícono de reloj), envía un ping y observa cómo los paquetes ICMP viajan de PC → Switch → destino. Filtra por ICMP para ver solo tráfico relevante.</p>
+
+      <div class="info-box">
+        <strong>Proyecto completo:</strong> Revisa el <a href="../../video.html">video demostrativo</a> para ver todos estos comandos aplicados en el laboratorio.
+      </div>
+    </article>
+  </div>
+
+    <footer class="footer">
+    <div class="container footer-unified">
+      <p>© 2026 Red Básica — Cisco Packet Tracer</p>
+      <p>ITECSUR · Manejo de Redes Avanzadas</p>
+    </div>
+  </footer>
+  <script src="../../assets/js/main.js"></script>
+</body>
+</html>

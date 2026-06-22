@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asignación de IP | Red Básica</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container nav-inner">
+      <a href="../../index.html" class="logo"><div class="logo-icon">⬡</div>Red Básica</a>
+      <button class="nav-toggle" aria-label="Menú"><span></span><span></span><span></span></button>
+      <ul class="nav-links">
+        <li><a href="../../index.html">Inicio</a></li>
+        <li><span class="nav-parent">Temas ▾</span>
+          <ul class="dropdown">
+            <li class="sub-label">Módulos</li>
+            <li><a href="../fundamentos/index.html">Fundamentos de Red</a></li>
+            <li><a href="../packet-tracer/index.html">Cisco Packet Tracer</a></li>
+            <li><a href="../topologia/index.html">Diseño de Topología</a></li>
+            <li><a href="../configuracion/index.html">Configuración IP</a></li>
+            <li><a href="../verificacion/index.html">Verificación</a></li>
+          </ul>
+        </li>
+        <li><a href="../../video.html">Video</a></li>
+        <li><a href="../../galeria.html">Galería</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="page-hero">
+    <div class="container">
+      <nav class="breadcrumb"><a href="../../index.html">Inicio</a> › <a href="index.html">Configuración</a> › <span>Asignación de IP</span></nav>
+      <h1>Asignación de IP</h1>
+      <p>Configuración de direcciones IPv4 estáticas en cada PC del laboratorio.</p>
+    </div>
+  </header>
+
+  <div class="container content-layout">
+    <aside class="sidebar">
+      <h4>En este módulo</h4>
+      <ul>
+        <li><a href="index.html">Introducción</a></li>
+        <li><a href="asignacion-ip.html" class="active">Asignación de IP</a></li>
+        <li><a href="gateway-dns.html">Gateway y DNS</a></li>
+      </ul>
+    </aside>
+    <article class="article">
+      <h2>Configurar IP en un PC</h2>
+      <ol>
+        <li>Haz clic en el PC → pestaña <strong>Desktop</strong>.</li>
+        <li>Abre <strong>IP Configuration</strong>.</li>
+        <li>Selecciona <strong>Static</strong> (configuración estática).</li>
+        <li>Ingresa IP Address, Subnet Mask y Default Gateway.</li>
+      </ol>
+
+      <h3>Tabla de asignación del proyecto</h3>
+      <ul>
+        <li><strong>PC0:</strong> 192.168.1.10 / 255.255.255.0</li>
+        <li><strong>PC1:</strong> 192.168.1.11 / 255.255.255.0</li>
+        <li><strong>Router (Fa0/0):</strong> 192.168.1.1 / 255.255.255.0</li>
+      </ul>
+
+      <h3>Configurar IP en el router</h3>
+      <p>En el router, ve a <strong>Config → INTERFACE → FastEthernet0/0</strong> e ingresa la IP y máscara. Activa el puerto (Port Status: On).</p>
+
+      <div class="info-box">
+        <strong>Capturas 3 y 4</strong> de la <a href="../../galeria.html">galería</a> documentan la configuración IP realizada en el proyecto.
+      </div>
+    </article>
+  </div>
+
+    <footer class="footer">
+    <div class="container footer-unified">
+      <p>© 2026 Red Básica — Cisco Packet Tracer</p>
+      <p>ITECSUR · Manejo de Redes Avanzadas</p>
+    </div>
+  </footer>
+  <script src="../../assets/js/main.js"></script>
+</body>
+</html>

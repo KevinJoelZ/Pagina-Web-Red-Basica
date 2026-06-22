@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modelo OSI | Red Básica</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container nav-inner">
+      <a href="../../index.html" class="logo"><div class="logo-icon">⬡</div>Red Básica</a>
+      <button class="nav-toggle" aria-label="Menú"><span></span><span></span><span></span></button>
+      <ul class="nav-links">
+        <li><a href="../../index.html">Inicio</a></li>
+        <li><span class="nav-parent">Temas ▾</span>
+          <ul class="dropdown">
+            <li class="sub-label">Módulos</li>
+            <li><a href="../fundamentos/index.html">Fundamentos de Red</a></li>
+            <li><a href="../packet-tracer/index.html">Cisco Packet Tracer</a></li>
+            <li><a href="../topologia/index.html">Diseño de Topología</a></li>
+            <li><a href="../configuracion/index.html">Configuración IP</a></li>
+            <li><a href="../verificacion/index.html">Verificación</a></li>
+          </ul>
+        </li>
+        <li><a href="../../video.html">Video</a></li>
+        <li><a href="../../galeria.html">Galería</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="page-hero">
+    <div class="container">
+      <nav class="breadcrumb"><a href="../../index.html">Inicio</a> › <a href="index.html">Fundamentos</a> › <span>Modelo OSI</span></nav>
+      <h1>Modelo OSI</h1>
+      <p>Las 7 capas del modelo de referencia y su relación con la red básica en Packet Tracer.</p>
+    </div>
+  </header>
+
+  <div class="container content-layout">
+    <aside class="sidebar">
+      <h4>En este módulo</h4>
+      <ul>
+        <li><a href="index.html">Introducción</a></li>
+        <li><a href="conceptos-red.html">Conceptos de red</a></li>
+        <li><a href="dispositivos-red.html">Dispositivos de red</a></li>
+        <li><a href="modelo-osi.html" class="active">Modelo OSI</a></li>
+      </ul>
+    </aside>
+    <article class="article">
+      <h2>¿Qué es el modelo OSI?</h2>
+      <p>El <strong>Open Systems Interconnection</strong> es un modelo de referencia que divide la comunicación de red en 7 capas. Cada capa tiene funciones específicas y se comunica con las capas adyacentes.</p>
+
+      <h3>Capas relevantes en red básica</h3>
+      <ol>
+        <li><strong>Capa 7 — Aplicación:</strong> Servicios al usuario (HTTP, DNS, ping).</li>
+        <li><strong>Capa 3 — Red:</strong> Direccionamiento lógico (IP) y enrutamiento (router).</li>
+        <li><strong>Capa 2 — Enlace:</strong> Direcciones MAC, switches, tramas Ethernet.</li>
+        <li><strong>Capa 1 — Física:</strong> Cables, señales eléctricas, conectores.</li>
+      </ol>
+
+      <h3>Encapsulamiento</h3>
+      <p>Cuando un PC envía un ping, los datos descienden por las capas añadiendo encabezados (PDU). En Packet Tracer, el <strong>modo simulación</strong> permite ver este proceso capa por capa en tiempo real.</p>
+
+      <div class="info-box">
+        <strong>Packet Tracer:</strong> Haz clic en el modo Simulation (reloj) y envía un ping para observar cómo viajan los paquetes ICMP a través de cada capa y dispositivo.
+      </div>
+    </article>
+  </div>
+
+    <footer class="footer">
+    <div class="container footer-unified">
+      <p>© 2026 Red Básica — Cisco Packet Tracer</p>
+      <p>ITECSUR · Manejo de Redes Avanzadas</p>
+    </div>
+  </footer>
+  <script src="../../assets/js/main.js"></script>
+</body>
+</html>

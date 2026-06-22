@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verificación | Red Básica</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container nav-inner">
+      <a href="../../index.html" class="logo"><div class="logo-icon">⬡</div>Red Básica</a>
+      <button class="nav-toggle" aria-label="Menú"><span></span><span></span><span></span></button>
+      <ul class="nav-links">
+        <li><a href="../../index.html">Inicio</a></li>
+        <li><span class="nav-parent">Temas ▾</span>
+          <ul class="dropdown">
+            <li class="sub-label">Módulos</li>
+            <li><a href="../fundamentos/index.html">Fundamentos de Red</a></li>
+            <li><a href="../packet-tracer/index.html">Cisco Packet Tracer</a></li>
+            <li><a href="../topologia/index.html">Diseño de Topología</a></li>
+            <li><a href="../configuracion/index.html">Configuración IP</a></li>
+            <li><a href="../verificacion/index.html">Verificación</a></li>
+          </ul>
+        </li>
+        <li><a href="../../video.html">Video</a></li>
+        <li><a href="../../galeria.html">Galería</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="page-hero">
+    <div class="container">
+      <nav class="breadcrumb"><a href="../../index.html">Inicio</a> › <span>Verificación</span></nav>
+      <span class="section-tag">Módulo 5</span>
+      <h1>Verificación de Conectividad</h1>
+      <p>Pruebas con ping, traceroute y comandos de diagnóstico para confirmar que la red opera correctamente.</p>
+    </div>
+  </header>
+
+  <div class="container content-layout">
+    <aside class="sidebar">
+      <h4>En este módulo</h4>
+      <ul>
+        <li><a href="index.html" class="active">Introducción</a></li>
+        <li><a href="ping.html">Pruebas con ping</a></li>
+        <li><a href="comandos-diagnostico.html">Comandos de diagnóstico</a></li>
+      </ul>
+    </aside>
+    <article class="article">
+      <h2>¿Por qué verificar?</h2>
+      <p>Configurar una red no garantiza que funcione. La verificación sistemática detecta errores de IP duplicada, máscara incorrecta, gateway mal configurado o cables mal conectados.</p>
+
+      <h3>Pruebas recomendadas</h3>
+      <ol>
+        <li>Ping del PC0 al PC1 (misma subred).</li>
+        <li>Ping de cada PC al gateway (192.168.1.1).</li>
+        <li>Revisar tabla ARP en cada PC.</li>
+        <li>Usar modo simulación para ver el recorrido de paquetes.</li>
+      </ol>
+
+      <div class="info-box">
+        <strong>Resultado esperado:</strong> Todas las pruebas de ping deben responder con <em>Reply from...</em> y 0% packet loss.
+      </div>
+
+      <div class="cards-grid" style="margin-top: 24px;">
+        <a href="ping.html" class="card" style="text-decoration:none;color:inherit;">
+          <div class="card-icon">📡</div>
+          <h3>Pruebas con ping</h3>
+          <p>Uso de ICMP para validar conectividad entre hosts.</p>
+        </a>
+        <a href="comandos-diagnostico.html" class="card" style="text-decoration:none;color:inherit;">
+          <div class="card-icon">🔍</div>
+          <h3>Comandos de diagnóstico</h3>
+          <p>ipconfig, arp, show ip interface en router.</p>
+        </a>
+      </div>
+    </article>
+  </div>
+
+    <footer class="footer">
+    <div class="container footer-unified">
+      <p>© 2026 Red Básica — Cisco Packet Tracer</p>
+      <p>ITECSUR · Manejo de Redes Avanzadas</p>
+    </div>
+  </footer>
+  <script src="../../assets/js/main.js"></script>
+</body>
+</html>

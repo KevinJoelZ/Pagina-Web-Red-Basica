@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diseño de LAN | Red Básica</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container nav-inner">
+      <a href="../../index.html" class="logo"><div class="logo-icon">⬡</div>Red Básica</a>
+      <button class="nav-toggle" aria-label="Menú"><span></span><span></span><span></span></button>
+      <ul class="nav-links">
+        <li><a href="../../index.html">Inicio</a></li>
+        <li><span class="nav-parent">Temas ▾</span>
+          <ul class="dropdown">
+            <li class="sub-label">Módulos</li>
+            <li><a href="../fundamentos/index.html">Fundamentos de Red</a></li>
+            <li><a href="../packet-tracer/index.html">Cisco Packet Tracer</a></li>
+            <li><a href="../topologia/index.html">Diseño de Topología</a></li>
+            <li><a href="../configuracion/index.html">Configuración IP</a></li>
+            <li><a href="../verificacion/index.html">Verificación</a></li>
+          </ul>
+        </li>
+        <li><a href="../../video.html">Video</a></li>
+        <li><a href="../../galeria.html">Galería</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="page-hero">
+    <div class="container">
+      <nav class="breadcrumb"><a href="../../index.html">Inicio</a> › <a href="index.html">Topología</a> › <span>Diseño de LAN</span></nav>
+      <h1>Diseño de LAN</h1>
+      <p>Planificación del esquema de red antes de implementarlo en Packet Tracer.</p>
+    </div>
+  </header>
+
+  <div class="container content-layout">
+    <aside class="sidebar">
+      <h4>En este módulo</h4>
+      <ul>
+        <li><a href="index.html">Introducción</a></li>
+        <li><a href="diseno-lan.html" class="active">Diseño de LAN</a></li>
+        <li><a href="conexiones.html">Conexiones físicas</a></li>
+      </ul>
+    </aside>
+    <article class="article">
+      <h2>Esquema de direccionamiento</h2>
+      <p>Un diseño típico para red básica usa la red privada <strong>192.168.1.0/24</strong>:</p>
+      <ul>
+        <li>PC0 → 192.168.1.10 / 255.255.255.0</li>
+        <li>PC1 → 192.168.1.11 / 255.255.255.0</li>
+        <li>Gateway (router) → 192.168.1.1</li>
+      </ul>
+
+      <h3>Topología en estrella</h3>
+      <p>Todas las PCs se conectan a un switch central. Esto concentra el tráfico y facilita la administración. Si un cable falla, solo afecta a un host, no a toda la red.</p>
+
+      <h3>Documentación previa</h3>
+      <p>Antes de armar en Packet Tracer, documenta:</p>
+      <ol>
+        <li>Lista de dispositivos y cantidad.</li>
+        <li>Tabla de direcciones IP asignadas.</li>
+        <li>Diagrama de conexiones (quién conecta con quién).</li>
+      </ol>
+
+      <div class="info-box">
+        <strong>Ver en acción:</strong> El <a href="../../video.html">video demostrativo</a> muestra el armado completo de esta topología paso a paso.
+      </div>
+    </article>
+  </div>
+
+    <footer class="footer">
+    <div class="container footer-unified">
+      <p>© 2026 Red Básica — Cisco Packet Tracer</p>
+      <p>ITECSUR · Manejo de Redes Avanzadas</p>
+    </div>
+  </footer>
+  <script src="../../assets/js/main.js"></script>
+</body>
+</html>

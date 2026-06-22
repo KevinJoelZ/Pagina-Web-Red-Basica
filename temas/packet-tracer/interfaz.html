@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interfaz Packet Tracer | Red Básica</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container nav-inner">
+      <a href="../../index.html" class="logo"><div class="logo-icon">⬡</div>Red Básica</a>
+      <button class="nav-toggle" aria-label="Menú"><span></span><span></span><span></span></button>
+      <ul class="nav-links">
+        <li><a href="../../index.html">Inicio</a></li>
+        <li><span class="nav-parent">Temas ▾</span>
+          <ul class="dropdown">
+            <li class="sub-label">Módulos</li>
+            <li><a href="../fundamentos/index.html">Fundamentos de Red</a></li>
+            <li><a href="../packet-tracer/index.html">Cisco Packet Tracer</a></li>
+            <li><a href="../topologia/index.html">Diseño de Topología</a></li>
+            <li><a href="../configuracion/index.html">Configuración IP</a></li>
+            <li><a href="../verificacion/index.html">Verificación</a></li>
+          </ul>
+        </li>
+        <li><a href="../../video.html">Video</a></li>
+        <li><a href="../../galeria.html">Galería</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="page-hero">
+    <div class="container">
+      <nav class="breadcrumb"><a href="../../index.html">Inicio</a> › <a href="index.html">Packet Tracer</a> › <span>Interfaz</span></nav>
+      <h1>Interfaz y Herramientas</h1>
+      <p>Conoce los elementos principales del entorno de trabajo de Packet Tracer.</p>
+    </div>
+  </header>
+
+  <div class="container content-layout">
+    <aside class="sidebar">
+      <h4>En este módulo</h4>
+      <ul>
+        <li><a href="index.html">Introducción</a></li>
+        <li><a href="instalacion.html">Instalación</a></li>
+        <li><a href="interfaz.html" class="active">Interfaz y herramientas</a></li>
+      </ul>
+    </aside>
+    <article class="article">
+      <h2>Áreas principales</h2>
+      <ul>
+        <li><strong>Barra de herramientas superior:</strong> Nuevo, abrir, guardar, deshacer.</li>
+        <li><strong>Paleta inferior izquierda:</strong> Categorías de dispositivos (routers, switches, end devices).</li>
+        <li><strong>Área de trabajo central:</strong> Lienzo donde se arma la topología.</li>
+        <li><strong>Panel inferior derecho:</strong> Modo Realtime / Simulation y escala de tiempo.</li>
+      </ul>
+
+      <h3>Tipos de conexión</h3>
+      <ul>
+        <li><strong>Copper Straight-Through:</strong> PC a switch, switch a router (FastEthernet).</li>
+        <li><strong>Copper Cross-Over:</strong> Switch a switch o PC a PC (casos especiales).</li>
+        <li><strong>Console:</strong> Cable de administración al router/switch.</li>
+      </ul>
+
+      <h3>Modos de operación</h3>
+      <p><strong>Realtime:</strong> La red funciona en tiempo real, ideal para configurar y probar ping.</p>
+      <p><strong>Simulation:</strong> Congela el tiempo y muestra animación de paquetes — perfecto para entender el flujo de datos.</p>
+
+      <div class="info-box">
+        <strong>Atajo útil:</strong> Selecciona el ícono de rayo (lightning) para elegir el tipo de cable antes de conectar dos dispositivos.
+      </div>
+    </article>
+  </div>
+
+    <footer class="footer">
+    <div class="container footer-unified">
+      <p>© 2026 Red Básica — Cisco Packet Tracer</p>
+      <p>ITECSUR · Manejo de Redes Avanzadas</p>
+    </div>
+  </footer>
+  <script src="../../assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gateway y DNS | Red Básica</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container nav-inner">
+      <a href="../../index.html" class="logo"><div class="logo-icon">⬡</div>Red Básica</a>
+      <button class="nav-toggle" aria-label="Menú"><span></span><span></span><span></span></button>
+      <ul class="nav-links">
+        <li><a href="../../index.html">Inicio</a></li>
+        <li><span class="nav-parent">Temas ▾</span>
+          <ul class="dropdown">
+            <li class="sub-label">Módulos</li>
+            <li><a href="../fundamentos/index.html">Fundamentos de Red</a></li>
+            <li><a href="../packet-tracer/index.html">Cisco Packet Tracer</a></li>
+            <li><a href="../topologia/index.html">Diseño de Topología</a></li>
+            <li><a href="../configuracion/index.html">Configuración IP</a></li>
+            <li><a href="../verificacion/index.html">Verificación</a></li>
+          </ul>
+        </li>
+        <li><a href="../../video.html">Video</a></li>
+        <li><a href="../../galeria.html">Galería</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="page-hero">
+    <div class="container">
+      <nav class="breadcrumb"><a href="../../index.html">Inicio</a> › <a href="index.html">Configuración</a> › <span>Gateway y DNS</span></nav>
+      <h1>Gateway y DNS</h1>
+      <p>Puerta de enlace predeterminada y resolución de nombres en la red básica.</p>
+    </div>
+  </header>
+
+  <div class="container content-layout">
+    <aside class="sidebar">
+      <h4>En este módulo</h4>
+      <ul>
+        <li><a href="index.html">Introducción</a></li>
+        <li><a href="asignacion-ip.html">Asignación de IP</a></li>
+        <li><a href="gateway-dns.html" class="active">Gateway y DNS</a></li>
+      </ul>
+    </aside>
+    <article class="article">
+      <h2>Default Gateway</h2>
+      <p>El <strong>gateway predeterminado</strong> es la dirección IP del router en la subred local. Cuando un PC quiere comunicarse con un host fuera de su red (otra subred o Internet), envía el paquete al gateway.</p>
+      <p>En nuestro proyecto: <strong>Default Gateway = 192.168.1.1</strong> (interfaz FastEthernet0/0 del router).</p>
+
+      <h3>¿Qué pasa sin gateway?</h3>
+      <p>Los PCs pueden hacer ping entre sí (misma subred), pero no podrán alcanzar redes externas. El gateway es obligatorio para comunicación inter-red.</p>
+
+      <h2>Servidor DNS</h2>
+      <p>El <strong>DNS</strong> traduce nombres de dominio (www.ejemplo.com) a direcciones IP. En una red básica sin servidor DNS, este campo puede dejarse vacío o apuntar a una IP simulada si se agrega un servidor al proyecto.</p>
+
+      <div class="info-box">
+        <strong>Verificación:</strong> Tras configurar gateway, prueba <code>ping 192.168.1.1</code> desde cada PC para confirmar que alcanzan al router.
+      </div>
+    </article>
+  </div>
+
+    <footer class="footer">
+    <div class="container footer-unified">
+      <p>© 2026 Red Básica — Cisco Packet Tracer</p>
+      <p>ITECSUR · Manejo de Redes Avanzadas</p>
+    </div>
+  </footer>
+  <script src="../../assets/js/main.js"></script>
+</body>
+</html>

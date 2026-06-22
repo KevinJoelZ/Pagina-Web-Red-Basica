@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fundamentos de Red | Red Básica</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container nav-inner">
+      <a href="../../index.html" class="logo"><div class="logo-icon">⬡</div>Red Básica</a>
+      <button class="nav-toggle" aria-label="Menú"><span></span><span></span><span></span></button>
+      <ul class="nav-links">
+        <li><a href="../../index.html">Inicio</a></li>
+        <li>
+          <span class="nav-parent">Temas ▾</span>
+          <ul class="dropdown">
+            <li class="sub-label">Módulos</li>
+            <li><a href="../fundamentos/index.html">Fundamentos de Red</a></li>
+            <li><a href="../packet-tracer/index.html">Cisco Packet Tracer</a></li>
+            <li><a href="../topologia/index.html">Diseño de Topología</a></li>
+            <li><a href="../configuracion/index.html">Configuración IP</a></li>
+            <li><a href="../verificacion/index.html">Verificación</a></li>
+          </ul>
+        </li>
+        <li><a href="../../video.html">Video</a></li>
+        <li><a href="../../galeria.html">Galería</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="page-hero">
+    <div class="container">
+      <nav class="breadcrumb"><a href="../../index.html">Inicio</a> › <span>Fundamentos de Red</span></nav>
+      <span class="section-tag">Módulo 1</span>
+      <h1>Fundamentos de Red</h1>
+      <p>Base teórica para comprender cómo funciona una red local (LAN) antes de implementarla en Cisco Packet Tracer.</p>
+    </div>
+  </header>
+
+  <div class="container content-layout">
+    <aside class="sidebar">
+      <h4>En este módulo</h4>
+      <ul>
+        <li><a href="index.html" class="active">Introducción</a></li>
+        <li><a href="conceptos-red.html">Conceptos de red</a></li>
+        <li><a href="dispositivos-red.html">Dispositivos de red</a></li>
+        <li><a href="modelo-osi.html">Modelo OSI</a></li>
+      </ul>
+    </aside>
+    <article class="article">
+      <h2>¿Por qué empezar por los fundamentos?</h2>
+      <p>Una red básica no es solo conectar cables: implica entender cómo los dispositivos se identifican, se comunican y comparten recursos dentro de un mismo dominio de broadcast. Este módulo sienta las bases para el laboratorio práctico.</p>
+
+      <h3>Objetivos del módulo</h3>
+      <ul>
+        <li>Definir qué es una red local (LAN) y sus componentes principales.</li>
+        <li>Identificar el rol de switches, routers y hosts en la topología.</li>
+        <li>Relacionar el modelo OSI con las capas involucradas en una red básica.</li>
+      </ul>
+
+      <div class="info-box">
+        <strong>💡 Tip práctico:</strong> Antes de abrir Packet Tracer, dibuja en papel la topología con IPs asignadas. Esto evita errores de direccionamiento durante la configuración.
+      </div>
+
+      <h3>Subpáginas de este módulo</h3>
+      <div class="cards-grid" style="margin-top: 20px;">
+        <a href="conceptos-red.html" class="card" style="text-decoration:none;color:inherit;">
+          <div class="card-icon">📖</div>
+          <h3>Conceptos de red</h3>
+          <p>LAN, WAN, protocolos y direccionamiento básico.</p>
+        </a>
+        <a href="dispositivos-red.html" class="card" style="text-decoration:none;color:inherit;">
+          <div class="card-icon">🖧</div>
+          <h3>Dispositivos de red</h3>
+          <p>PC, switch, router y sus funciones en capa 2 y 3.</p>
+        </a>
+        <a href="modelo-osi.html" class="card" style="text-decoration:none;color:inherit;">
+          <div class="card-icon">📊</div>
+          <h3>Modelo OSI</h3>
+          <p>Las 7 capas y su aplicación en redes básicas.</p>
+        </a>
+      </div>
+    </article>
+  </div>
+
+    <footer class="footer">
+    <div class="container footer-unified">
+      <p>© 2026 Red Básica — Cisco Packet Tracer</p>
+      <p>ITECSUR · Manejo de Redes Avanzadas</p>
+    </div>
+  </footer>
+  <script src="../../assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conceptos de Red | Red Básica</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container nav-inner">
+      <a href="../../index.html" class="logo"><div class="logo-icon">⬡</div>Red Básica</a>
+      <button class="nav-toggle" aria-label="Menú"><span></span><span></span><span></span></button>
+      <ul class="nav-links">
+        <li><a href="../../index.html">Inicio</a></li>
+        <li><span class="nav-parent">Temas ▾</span>
+          <ul class="dropdown">
+            <li class="sub-label">Módulos</li>
+            <li><a href="../fundamentos/index.html">Fundamentos de Red</a></li>
+            <li><a href="../packet-tracer/index.html">Cisco Packet Tracer</a></li>
+            <li><a href="../topologia/index.html">Diseño de Topología</a></li>
+            <li><a href="../configuracion/index.html">Configuración IP</a></li>
+            <li><a href="../verificacion/index.html">Verificación</a></li>
+          </ul>
+        </li>
+        <li><a href="../../video.html">Video</a></li>
+        <li><a href="../../galeria.html">Galería</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="page-hero">
+    <div class="container">
+      <nav class="breadcrumb"><a href="../../index.html">Inicio</a> › <a href="index.html">Fundamentos</a> › <span>Conceptos de red</span></nav>
+      <h1>Conceptos de Red</h1>
+      <p>Definiciones clave para entender el funcionamiento de una red local básica.</p>
+    </div>
+  </header>
+
+  <div class="container content-layout">
+    <aside class="sidebar">
+      <h4>En este módulo</h4>
+      <ul>
+        <li><a href="index.html">Introducción</a></li>
+        <li><a href="conceptos-red.html" class="active">Conceptos de red</a></li>
+        <li><a href="dispositivos-red.html">Dispositivos de red</a></li>
+        <li><a href="modelo-osi.html">Modelo OSI</a></li>
+      </ul>
+    </aside>
+    <article class="article">
+      <h2>¿Qué es una red?</h2>
+      <p>Una <strong>red de computadoras</strong> es un conjunto de dispositivos interconectados que comparten recursos e información mediante protocolos estandarizados. En nuestro proyecto nos enfocamos en una <strong>LAN</strong> (Local Area Network): red de área local que cubre un espacio reducido como un aula o laboratorio.</p>
+
+      <h3>Red LAN vs WAN</h3>
+      <ul>
+        <li><strong>LAN:</strong> Alta velocidad, bajo costo, alcance limitado (edificio, campus).</li>
+        <li><strong>WAN:</strong> Conecta LANs distantes a través de proveedores (Internet es la WAN más grande).</li>
+      </ul>
+
+      <h3>Direccionamiento IP</h3>
+      <p>Cada dispositivo en la red necesita una <strong>dirección IP única</strong> para ser identificado. En IPv4 usamos 4 octetos (ej: 192.168.1.10). La <strong>máscara de subred</strong> define qué parte es red y cuál es host (ej: 255.255.255.0 = /24).</p>
+
+      <h3>Protocolos fundamentales</h3>
+      <ul>
+        <li><strong>TCP/IP:</strong> Suite de protocolos base de Internet y redes modernas.</li>
+        <li><strong>ICMP:</strong> Usado por ping para verificar conectividad.</li>
+        <li><strong>ARP:</strong> Resuelve direcciones IP a direcciones MAC en la LAN.</li>
+      </ul>
+
+      <div class="info-box">
+        <strong>En Packet Tracer:</strong> Al configurar cada PC verás campos para IP, máscara, gateway y DNS — todos conceptos que aplicamos en este módulo.
+      </div>
+    </article>
+  </div>
+
+    <footer class="footer">
+    <div class="container footer-unified">
+      <p>© 2026 Red Básica — Cisco Packet Tracer</p>
+      <p>ITECSUR · Manejo de Redes Avanzadas</p>
+    </div>
+  </footer>
+  <script src="../../assets/js/main.js"></script>
+</body>
+</html>
